@@ -1,0 +1,379 @@
+/* HomeStyle.module.css */
+.container {
+  min-height: 100vh;
+  background-color: #0a0e17;
+  color: #e0e0e0;
+  padding: 2rem;
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroContent {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  color: #0dff92;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wave {
+  font-size: 1.5rem;
+}
+
+.name {
+  font-size: 3.5rem;
+  margin: 0;
+  background: linear-gradient(90deg, #e0e0e0, #0dff92);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.role {
+  font-size: 1.8rem;
+  color: #0dff92;
+  margin: 1rem 0 2rem;
+  min-height: 2.5rem;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #0dff92;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(13, 255, 146, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0dff92;
+  transition: width 0.3s ease;
+}
+
+.tab:hover::after,
+.tab.active::after {
+  width: 100%;
+}
+
+.tab.active {
+  color: #0dff92;
+}
+
+.tabContent {
+  min-height: 200px;
+  margin-bottom: 2rem;
+}
+
+.bio {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: rgba(224, 224, 224, 0.9);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.techItem {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.techName {
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.projectsPreview {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid rgba(13, 255, 146, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(13, 255, 146, 0.1);
+}
+
+.projectCard h3 {
+  color: #0dff92;
+  margin-top: 0;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton, .secondaryButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background-color: #0dff92;
+  color: #0a0e17;
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(13, 255, 146, 0.3);
+}
+
+.secondaryButton {
+  border: 1px solid #0dff92;
+  color: #0dff92;
+  background: transparent;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(13, 255, 146, 0.1);
+}
+
+.codeWindow {
+  width: 100%;
+  background-color: #161b28;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(13, 255, 146, 0.1);
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: #0a0e17;
+  border-bottom: 1px solid rgba(13, 255, 146, 0.1);
+}
+
+.codeButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.codeButtons span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.codeTitle {
+  flex: 1;
+  text-align: center;
+  color: rgba(224, 224, 224, 0.7);
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  overflow-x: auto;
+}
+
+.codeBlock code {
+  display: block;
+  white-space: pre;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #0dff92;
+}
+
+.socialLink img {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollIndicator {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.scrollIndicator span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(224, 224, 224, 0.5);
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.scrollIndicator span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.scrollIndicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scrollIndicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .role {
+    font-size: 1.5rem;
+  }
+  
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .codeWindow {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .name {
+    font-size: 2rem;
+  }
+  
+  .role {
+    font-size: 1.2rem;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+  }
+  
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+  }
+}

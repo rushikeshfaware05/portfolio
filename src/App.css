@@ -1,0 +1,155 @@
+/* Base Styles */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0a0e17; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+  background-color: #0dff92; /* Neon green */
+  mix-blend-mode: difference;
+}
+
+/* Scroll to Top Button */
+.scroll-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0dff92, #3b82f6); /* Gradient */
+  color: #0a0e17;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(13, 255, 146, 0.3);
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.scroll-top-button:hover {
+  transform: scale(1.1);
+}
+
+.scroll-top-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Terminal Footer */
+.terminal-footer {
+  background-color: #161b28; /* Darker background */
+  color: #e0e0e0;
+  padding: 3rem 1rem;
+  border-top: 1px solid rgba(13, 255, 146, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-command {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1rem;
+}
+
+.prompt {
+  color: #0dff92; /* Neon green */
+  margin-right: 0.5rem;
+}
+
+.command {
+  color: #e0e0e0;
+}
+
+.cursor {
+  color: #0dff92;
+  animation: blink 1s infinite;
+  margin-left: 0.25rem;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0dff92;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(224, 224, 224, 0.7);
+}
+
+.tech {
+  color: #0dff92;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-command {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .scroll-top-button {
+    width: 40px;
+    height: 40px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 70px;
+  }
+  
+  .footer-command {
+    font-size: 0.8rem;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+}
