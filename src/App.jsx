@@ -38,27 +38,23 @@ function App() {
         setCursorVariant('default')
       }
     }
+// Fix section detection logic in handleScroll
+const handleScroll = () => {
+  setShowScrollTop(window.scrollY > 300);
+  
+  const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+  const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300)
-
-      // Update active section based on scroll position
-      const sections = ['home', 'about', 'skills', 'projects', 'contact']
-      const scrollPosition = window.scrollY + 100
-
-      for (const section of sections) {
-        const element = document.getElementById(section)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetHeight = element.offsetHeight
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
-            break
-          }
-        }
+  sections.forEach(section => {
+    const element = document.getElementById(section);
+    if (element) {
+      const { top, bottom } = element.getBoundingClientRect();
+      if (top <= window.innerHeight / 2 && bottom >= window.innerHeight / 2) {
+        setActiveSection(section);
       }
     }
+  });
+}
 
     window.addEventListener('mousemove', moveCursor)
     document.addEventListener('mouseover', handleMouseEnter)
