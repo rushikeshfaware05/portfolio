@@ -8,21 +8,31 @@ function Projects({ id }) {
     {
       id: 1,
       image: viberr01,
-      title: "Employee Management",
-      description: "A comprehensive system for managing employee data",
-      tags: ["React", "Node.js"],
+      title: "Expense Tracker System",
+      description: "Application for tracking personal finances",
+      tags: ["React", "Spring Boot"],
       link: "https://github.com/Darker009/Employee-Management-System",
       deployed: true
     },
     {
       id: 2,
       image: viberr02,
-      title: "Expense Tracker System",
-      description: "Application for tracking personal finances",
-      tags: ["JavaScript", "Express"],
+      title: "Employee Management",
+      description: "A comprehensive system for managing employee data",
+      tags: ["React", "Spring Boot"],
+      link: "https://github.com/Darker009/ExpenseTrackerSystem",
+      deployed: true
+    },
+    {
+      id: 3,
+      image: viberr02,
+      title: "Employee Management",
+      description: "A comprehensive system for managing employee data",
+      tags: ["React", "Spring Boot"],
       link: "https://github.com/Darker009/ExpenseTrackerSystem",
       deployed: true
     }
+    
   ];
 
   const ProjectCard = ({ image, title, description, tags, link, deployed }) => {

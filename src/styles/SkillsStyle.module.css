@@ -9,7 +9,7 @@
   --progress-bg: rgba(255, 255, 255, 0.1);
   
   /* Add default dark mode colors */
-  --color-background: #0a0e17;
+  --color-background: z;
   --color-text: #e0e0e0;
   --color-border: rgba(13,255,146,0.1);
 }
@@ -253,7 +253,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-bg: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    --primary-bg:#0a0e17 ;
     --text-primary: #2d3748;
     --text-secondary: #4a5568;
     --card-bg: rgba(0, 0, 0, 0.03);
