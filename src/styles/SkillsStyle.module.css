@@ -13,7 +13,6 @@
   --color-text: #e0e0e0;
   --color-border: rgba(13,255,146,0.1);
 }
-
 .skillsContainer {
   min-height: 100vh; /* Ensures full viewport height */
   position: relative;
@@ -22,10 +21,13 @@
   align-items: center;
   padding: 6rem 1.25rem;
   background: var(--primary-bg);
+  background-color: #0a0e17; /* Fallback solid background */
   color: var(--text-primary);
   overflow: hidden;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
+
 
 .matrixRain {
   position: absolute;
