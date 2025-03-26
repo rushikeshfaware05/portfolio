@@ -1,26 +1,40 @@
+/* App.css */
 /* Base Styles */
 .app-container {
   position: relative;
   min-height: 100vh;
-  background-color: #0a0e17; /* Dark background */
-  color: #e0e0e0; /* Light text */
+  background-color: #0a0e17;
+  color: #e0e0e0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 .main-content {
-  padding-top: 80px; /* Space for fixed navbar */
+  padding-top: 80px;
+  position: relative;
 }
 
 /* Custom Cursor */
 .custom-cursor {
   position: fixed;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 9999;
-  will-change: transform;
-  background-color: #0dff92; /* Neon green */
+  z-index: 1000;
+  background-color: #0dff92;
   mix-blend-mode: difference;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
 }
 
 /* Scroll to Top Button */
@@ -31,7 +45,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0dff92, #3b82f6); /* Gradient */
+  background: #0dff92;
+  background: linear-gradient(135deg, #0dff92, #3b82f6);
   color: #0a0e17;
   border: none;
   display: flex;
@@ -39,25 +54,28 @@
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(13, 255, 146, 0.3);
-  z-index: 100;
+  z-index: 500;
   transition: all 0.3s ease;
 }
 
 .scroll-top-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) translateZ(0);
 }
 
 .scroll-top-button svg {
   width: 24px;
   height: 24px;
+  transform: translateZ(0);
 }
 
 /* Terminal Footer */
 .terminal-footer {
-  background-color: #161b28; /* Darker background */
+  background-color: #161b28;
   color: #e0e0e0;
   padding: 3rem 1rem;
   border-top: 1px solid rgba(13, 255, 146, 0.1);
+  position: relative;
+  z-index: 2;
 }
 
 .footer-content {
@@ -73,21 +91,20 @@
   margin-bottom: 2rem;
   font-family: 'Fira Code', monospace;
   font-size: 1.1rem;
+  gap: 0.5rem;
 }
 
 .prompt {
-  color: #0dff92; /* Neon green */
-  margin-right: 0.5rem;
+  color: #0dff92;
 }
 
 .command {
-  color: #e0e0e0;
+  color: inherit;
 }
 
 .cursor {
   color: #0dff92;
-  animation: blink 1s infinite;
-  margin-left: 0.25rem;
+  animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
@@ -103,53 +120,78 @@
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
   color: #e0e0e0;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
 }
 
 .social-icon:hover {
   color: #0dff92;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .copyright {
   font-size: 0.9rem;
   color: rgba(224, 224, 224, 0.7);
+  line-height: 1.5;
 }
 
 .tech {
   color: #0dff92;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .footer-command {
-    font-size: 0.9rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  .main-content {
+    padding-top: 70px;
   }
-  
+
   .scroll-top-button {
     width: 40px;
     height: 40px;
     bottom: 1rem;
     right: 1rem;
   }
+
+  .footer-command {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
 }
 
 @media (max-width: 480px) {
-  .main-content {
-    padding-top: 70px;
-  }
-  
   .footer-command {
     font-size: 0.8rem;
   }
-  
+
   .social-links {
     gap: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+/* Performance Optimizations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
