@@ -1,7 +1,27 @@
 import { useState, useEffect } from 'react';
-import SkillList from '../components/SkillList';
 import styles from '../styles/SkillsStyle.module.css';
 import checkMarkIcon from '../assets/checkmark-dark.svg';
+
+const SkillList = ({ src, skill, isAnimated }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <span 
+      className={`${styles.skillItem} ${isAnimated ? styles.animated : ''} ${isHovered ? styles.hovered : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className={styles.hologramEffect}></div>
+      <img 
+        src={src} 
+        alt={`${skill} icon`} 
+        className={`${styles.icon} ${isHovered ? styles.iconHover : ''}`}
+      />
+      <p className={styles.skillText}>{skill}</p>
+      <div className={styles.particleEffect}></div>
+    </span>
+  );
+};
 
 function Skills() {
   const [animatedSkills, setAnimatedSkills] = useState([]);
@@ -46,13 +66,14 @@ function Skills() {
 
   return (
     <section id="skills" className={styles.skillsContainer}>
+      <div className={styles.matrixRain}></div>
       <div className={styles.contentWrapper}>
         <h1 className={styles.title}>My Skills</h1>
         <p className={styles.subtitle}>Technologies I've been working with recently</p>
         
         <div className={styles.skillCategory}>
           <h2 className={styles.categoryTitle}>Frontend Development</h2>
-          <div className={styles.skillList}>
+          <div className={styles.skillGrid}>
             {frontendSkills.map(skill => (
               <SkillList 
                 key={skill} 
@@ -66,7 +87,7 @@ function Skills() {
 
         <div className={styles.skillCategory}>
           <h2 className={styles.categoryTitle}>Backend Development</h2>
-          <div className={styles.skillList}>
+          <div className={styles.skillGrid}>
             {backendSkills.map(skill => (
               <SkillList 
                 key={skill} 
@@ -80,7 +101,7 @@ function Skills() {
 
         <div className={styles.skillCategory}>
           <h2 className={styles.categoryTitle}>Tools & Platforms</h2>
-          <div className={styles.skillList}>
+          <div className={styles.skillGrid}>
             {tools.map(skill => (
               <SkillList 
                 key={skill} 
@@ -92,14 +113,14 @@ function Skills() {
           </div>
         </div>
 
-        <div className={styles.progressBars}>
+        <div className={`${styles.progressBars} ${isVisible ? styles.visible : ''}`}>
           <h2 className={styles.categoryTitle}>Skill Proficiency</h2>
           <div className={styles.progressItem}>
             <span data-percent="75%">Frontend Development</span>
             <div className={styles.progressBackground}>
               <div 
                 className={`${styles.progressFill} ${styles.animateFrontend}`} 
-                style={{ width: isVisible ? '75%' : '0%' }}
+                style={{ transform: isVisible ? 'scaleX(0.75)' : 'scaleX(0)' }}
               />
             </div>
           </div>
@@ -108,7 +129,7 @@ function Skills() {
             <div className={styles.progressBackground}>
               <div 
                 className={`${styles.progressFill} ${styles.animateBackend}`} 
-                style={{ width: isVisible ? '85%' : '0%' }}
+                style={{ transform: isVisible ? 'scaleX(0.85)' : 'scaleX(0)' }}
               />
             </div>
           </div>
@@ -117,7 +138,7 @@ function Skills() {
             <div className={styles.progressBackground}>
               <div 
                 className={`${styles.progressFill} ${styles.animateDesign}`} 
-                style={{ width: isVisible ? '70%' : '0%' }}
+                style={{ transform: isVisible ? 'scaleX(0.7)' : 'scaleX(0)' }}
               />
             </div>
           </div>
