@@ -31,20 +31,22 @@ export default function AboutMe() {
             <h2 className={styles.sectionTitle}>About Me</h2>
             <div className={styles.underline}></div>
             <p className={styles.introText}>
-              Passionate <span className={styles.highlight}>Full Stack Developer</span> with expertise in building modern web applications.
+              Passionate <span className={styles.highlight}>Aspiring Full Stack Developer</span> excited to build modern web applications.
             </p>
             <div className={styles.description}>
               <p>
-                With over 3 years of professional experience, I specialize in JavaScript frameworks like React and Next.js for frontend development,
-                and Node.js with Express for backend solutions. I'm passionate about creating efficient, scalable, and user-friendly applications.
+              Fresh out of academia with hands-on experience in JavaScript, React, and Node.js. 
+    I love turning ideas into functional applications and constantly expanding my 
+    knowledge in web development.
               </p>
               <p>
-                My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences. I stay updated with
-                the latest technologies and best practices to ensure my work meets modern standards.
+              My projects demonstrate my ability to learn quickly and apply modern technologies.
+    I'm eager to contribute my problem-solving skills and fresh perspective to 
+    real-world development challenges.
               </p>
             </div>
             <div className={styles.skillsList}>
-              <h3 className={styles.skillsTitle}>Technologies I work with:</h3>
+              <h3 className={styles.skillsTitle}>Technologies I'm proficient in:</h3>
               <ul>
                 <li>Spring Framework</li>
                 <li>React</li>
