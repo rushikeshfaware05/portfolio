@@ -7,6 +7,11 @@
   --accent-gradient: linear-gradient(90deg, #00dbde, #fc00ff);
   --card-bg: rgba(255, 255, 255, 0.05);
   --progress-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Add default dark mode colors */
+  --color-background: #0a0e17;
+  --color-text: #e0e0e0;
+  --color-border: rgba(13,255,146,0.1);
 }
 
 .skillsContainer {
@@ -242,7 +247,6 @@
     font-size: 1.5rem;
   }
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     --primary-bg: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
@@ -250,14 +254,22 @@
     --text-secondary: #4a5568;
     --card-bg: rgba(0, 0, 0, 0.03);
     --progress-bg: rgba(0, 0, 0, 0.05);
+    --color-background: #f5f7fa;
+    --color-text: #2d3748;
+    --color-border: rgba(0, 0, 0, 0.1);
   }
 
   .icon {
     filter: brightness(0);
   }
   
+  .skillsContainer {
+    background: var(--primary-bg);
+    color: var(--text-primary);
+  }
+  
   .skillItem {
-    border-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
   }
   
   .matrixRain {
@@ -268,7 +280,7 @@
       rgba(0,0,0,0.05) 3px,
       transparent 5px
     );
-  }
+  } /* Removed extra closing brace here */
   
   .hologramEffect {
     background: linear-gradient(
