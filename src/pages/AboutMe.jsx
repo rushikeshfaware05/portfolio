@@ -35,14 +35,14 @@ export default function AboutMe() {
             </p>
             <div className={styles.description}>
               <p>
-              Fresh out of academia with hands-on experience in JavaScript, React, and Node.js. 
+              Fresh out of academia with hands-on experience in _JavaScript_, _React_, _Core-Java_ & `_Spring-Boot_` . 
     I love turning ideas into functional applications and constantly expanding my 
     knowledge in web development.
               </p>
               <p>
-              My projects demonstrate my ability to learn quickly and apply modern technologies.
+              My projects demonstrate my ability to learn quickly and apply `_modern_` `_technologies_`.
     I'm eager to contribute my problem-solving skills and fresh perspective to 
-    real-world development challenges.
+    real-world development *challenges*.
               </p>
             </div>
             <div className={styles.skillsList}>

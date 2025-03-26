@@ -127,12 +127,12 @@ function Home() {
             {activeTab === 'projects' && (
               <div className={styles.projectsPreview}>
                 <div className={styles.projectCard}>
-                  <h3>Expense Tracker System</h3>
-                  <p>Full-stack solution with React, SpringBoot and MySQL</p>
+                <h3>Job Portal System</h3>
+                <p>Apllication to track daily expenses</p>
                 </div>
                 <div className={styles.projectCard}>
-                  <h3>Job Portal System</h3>
-                  <p>Real-time collaboration with WebSockets</p>
+                <h3>Expense Tracker System</h3>
+                  <p>REST API which store employees information</p>
                 </div>
               </div>
             )}
@@ -193,7 +193,7 @@ function Home() {
           <img src={twitter} alt="Twitter" />
           <span>Twitter</span>
         </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+        <a href="https://github.com/Darker009" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
           <img src={github} alt="GitHub" />
           <span>GitHub</span>
         </a>

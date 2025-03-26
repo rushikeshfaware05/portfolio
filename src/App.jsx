@@ -166,7 +166,7 @@ const handleScroll = () => {
           </div>
 
           <div className="copyright">
-            © {new Date().getFullYear()} — Built with <span className="tech">React</span> & <span className="tech">Framer Motion</span>
+            © {new Date().getFullYear()} — Maintained By <span className="tech">Darker</span> ^ <span className="tech"> Techno_-*-_ </span>
           </div>
         </div>
       </footer>
