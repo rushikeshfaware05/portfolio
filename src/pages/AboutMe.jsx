@@ -1,5 +1,6 @@
 import styles from '../styles/AboutMeStyle.module.css';
 import { useEffect, useState } from 'react';
+import profileImage from '../assets/Sudarshan.png'; // Import the image directly
 
 export default function AboutMe() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,34 +35,40 @@ export default function AboutMe() {
             </p>
             <div className={styles.description}>
               <p>
-                With over 3 years of professional experience, I specialize in JavaScript frameworks like React and Next.js for frontend development, 
+                With over 3 years of professional experience, I specialize in JavaScript frameworks like React and Next.js for frontend development,
                 and Node.js with Express for backend solutions. I'm passionate about creating efficient, scalable, and user-friendly applications.
               </p>
               <p>
-                My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences. I stay updated with 
+                My approach combines technical expertise with creative problem-solving to deliver exceptional digital experiences. I stay updated with
                 the latest technologies and best practices to ensure my work meets modern standards.
               </p>
             </div>
             <div className={styles.skillsList}>
               <h3 className={styles.skillsTitle}>Technologies I work with:</h3>
               <ul>
-                <li>React.js / Next.js</li>
-                <li>Node.js / Express</li>
-                <li>TypeScript</li>
-                <li>MongoDB / PostgreSQL</li>
-                <li>GraphQL / REST APIs</li>
-                <li>Docker / AWS</li>
+                <li>Spring Framework</li>
+                <li>React</li>
+                <li>MySQL / Firebase</li>
+                <li>REST API's</li>
+                <li>GitHub</li>
+                <li>Docker</li>
+                <li>Postman</li>
               </ul>
             </div>
           </div>
           <div className={styles.imageContainer}>
             <div className={styles.profileImageWrapper}>
               <div className={styles.imageBorder}></div>
-              <img 
-                src="/profile.jpg" 
-                alt="Profile" 
+              <img
+                src={profileImage}
+                alt="Profile"
                 className={styles.profileImage}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = '/fallback-image.png';
+                }}
               />
+
             </div>
           </div>
         </div>

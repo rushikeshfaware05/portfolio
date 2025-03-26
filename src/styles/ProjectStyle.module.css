@@ -21,7 +21,7 @@
 .sectionTitle {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #e0e0e0, #0dff92);
+  background: linear-gradient(90deg, #e0e0e0, #00dbde);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -31,7 +31,7 @@
 
 .sectionSubtitle {
   font-size: 1.8rem;
-  color: #0dff92;
+  color: #00dbde;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -49,21 +49,21 @@
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 1px solid rgba(13, 255, 146, 0.1);
-  box-shadow: 0 8px 32px rgba(13, 255, 146, 0.05);
+  border: 1px solid rgba(0, 219, 222, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 219, 222, 0.05);
 }
 
 .projectCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(13, 255, 146, 0.15);
-  border-color: rgba(13, 255, 146, 0.3);
+  box-shadow: 0 12px 24px rgba(0, 219, 222, 0.15);
+  border-color: rgba(0, 219, 222, 0.3);
 }
 
 .projectImage {
   width: 100%;
   height: 240px;
   object-fit: cover;
-  border-bottom: 1px solid rgba(13, 255, 146, 0.1);
+  border-bottom: 1px solid rgba(0, 219, 222, 0.1);
 }
 
 .projectContent {
@@ -72,7 +72,7 @@
 
 .projectTitle {
   font-size: 1.5rem;
-  color: #0dff92;
+  color: #00dbde;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -93,10 +93,10 @@
 
 .tag {
   padding: 0.4rem 1rem;
-  background: rgba(13, 255, 146, 0.1);
+  background: rgba(0, 219, 222, 0.1);
   border-radius: 20px;
   font-size: 0.85rem;
-  color: #0dff92;
+  color: #00dbde;
   font-family: 'Courier New', monospace;
 }
 
@@ -104,17 +104,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.7rem;
-  color: #0dff92;
+  color: #00dbde;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
   padding: 0.8rem 1.5rem;
-  border: 1px solid rgba(13, 255, 146, 0.3);
+  border: 1px solid rgba(0, 219, 222, 0.3);
   border-radius: 6px;
 }
 
 .projectLink:hover {
-  background: rgba(13, 255, 146, 0.1);
+  background: rgba(0, 219, 222, 0.1);
   transform: translateY(-2px);
 }
 

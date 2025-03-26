@@ -27,9 +27,9 @@ function Skills() {
   const [animatedSkills, setAnimatedSkills] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
   
-  const frontendSkills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux", "Next.js"];
-  const backendSkills = ["C", "Core Java", "JDBC", "Spring Core", "Spring Boot", "MySQL", "Node.js"];
-  const tools = ["Git", "Docker", "VS Code", "Figma", "Postman"];
+  const frontendSkills = ["HTML", "CSS", "JavaScript", "React"];
+  const backendSkills = ["C", "Core Java", "JDBC", "Spring Core", "Spring Boot", "MySQL"];
+  const tools = ["Git", "Docker", "VS Code", "Eclipse IDE", "Spring Tool Suit 4", "Postman"];
 
   useEffect(() => {
     const observer = new IntersectionObserver(

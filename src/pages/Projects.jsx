@@ -1,13 +1,14 @@
 import React from 'react';
-import viberr01 from '../assets/employee.jpg';
-import viberr02 from '../assets/expense.jpg';
+import img1 from '../assets/expense.jpg';
+import img2 from '../assets/jpsystem.jpg';
+import img3 from '../assets/employee.jpg';
 import styles from '../styles/ProjectStyle.module.css';
 
 function Projects({ id }) {
   const projects = [
     {
       id: 1,
-      image: viberr01,
+      image: img1,
       title: "Expense Tracker System",
       description: "Application for tracking personal finances",
       tags: ["React", "Spring Boot"],
@@ -16,16 +17,16 @@ function Projects({ id }) {
     },
     {
       id: 2,
-      image: viberr02,
-      title: "Employee Management",
-      description: "A comprehensive system for managing employee data",
+      image: img2,
+      title: "Job Portal System",
+      description: "Application for applying jobs posted by employee.",
       tags: ["React", "Spring Boot"],
-      link: "https://github.com/Darker009/ExpenseTrackerSystem",
+      link: "https://github.com/Darker009/job-portal-backend",
       deployed: true
     },
     {
       id: 3,
-      image: viberr02,
+      image: img3,
       title: "Employee Management",
       description: "A comprehensive system for managing employee data",
       tags: ["React", "Spring Boot"],

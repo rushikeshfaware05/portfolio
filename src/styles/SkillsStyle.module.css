@@ -11,23 +11,23 @@
   /* Add default dark mode colors */
   --color-background: z;
   --color-text: #e0e0e0;
-  --color-border: rgba(13,255,146,0.1);
+  --color-border: rgba(0,219,222,0.1);
 }
+
 .skillsContainer {
-  min-height: 100vh; /* Ensures full viewport height */
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6rem 1.25rem;
   background: var(--primary-bg);
-  background-color: #0a0e17; /* Fallback solid background */
+  background-color: #0a0e17;
   color: var(--text-primary);
   overflow: hidden;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
-
 
 .matrixRain {
   position: absolute;
@@ -39,7 +39,7 @@
     0deg,
     transparent 0%,
     transparent 2px,
-    rgba(13,255,146,0.05) 3px,
+    rgba(0,219,222,0.05) 3px,
     transparent 5px
   );
   animation: matrixFlow 40s linear infinite;
@@ -117,7 +117,7 @@
   padding: 1rem;
   background: var(--card-bg);
   border-radius: 8px;
-  border: 1px solid rgba(13,255,146,0.1);
+  border: 1px solid rgba(0,219,222,0.1);
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -146,7 +146,7 @@
   background: linear-gradient(
     45deg,
     transparent 45%,
-    rgba(13,255,146,0.1) 50%,
+    rgba(0,219,222,0.1) 50%,
     transparent 55%
   );
   animation: hologramScan 3s linear infinite;
@@ -180,7 +180,7 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at center, 
-    rgba(13,255,146,0.1) 0%, 
+    rgba(0,219,222,0.1) 0%, 
     transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;

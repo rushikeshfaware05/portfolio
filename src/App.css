@@ -23,7 +23,7 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 1000;
-  background-color: #0dff92;
+  background-color: #00dbde;
   mix-blend-mode: difference;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
@@ -45,15 +45,15 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #0dff92;
-  background: linear-gradient(135deg, #0dff92, #3b82f6);
+  background: #00dbde;
+  background: linear-gradient(135deg, #00dbde, #3b82f6);
   color: #0a0e17;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(13, 255, 146, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 219, 222, 0.3);
   z-index: 500;
   transition: all 0.3s ease;
 }
@@ -73,7 +73,7 @@
   background-color: #161b28;
   color: #e0e0e0;
   padding: 3rem 1rem;
-  border-top: 1px solid rgba(13, 255, 146, 0.1);
+  border-top: 1px solid rgba(0, 219, 222, 0.1);
   position: relative;
   z-index: 2;
 }
@@ -95,7 +95,7 @@
 }
 
 .prompt {
-  color: #0dff92;
+  color: #00dbde;
 }
 
 .command {
@@ -103,7 +103,7 @@
 }
 
 .cursor {
-  color: #0dff92;
+  color: #00dbde;
   animation: blink 1s step-end infinite;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .social-icon:hover {
-  color: #0dff92;
+  color: #00dbde;
   transform: translateY(-3px) scale(1.1);
 }
 
@@ -140,7 +140,7 @@
 }
 
 .tech {
-  color: #0dff92;
+  color: #00dbde;
   font-weight: 500;
   white-space: nowrap;
 }

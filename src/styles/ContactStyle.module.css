@@ -12,15 +12,15 @@
   padding: 2rem;
   background-color: #161b28;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(13, 255, 146, 0.05);
-  border: 1px solid rgba(13, 255, 146, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 219, 222, 0.05);
+  border: 1px solid rgba(0, 219, 222, 0.1);
 }
 
 .sectionTitle {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #e0e0e0, #0dff92);
+  background: linear-gradient(90deg, #e0e0e0, #00dbde);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -65,18 +65,18 @@
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  border: 1px solid rgba(13, 255, 146, 0.2);
+  border: 1px solid rgba(0, 219, 222, 0.2);
   border-radius: 8px;
-  background-color: rgba(13, 255, 146, 0.05);
+  background-color: rgba(0, 219, 222, 0.05);
   transition: all 0.3s ease;
   color: #e0e0e0;
 }
 
 .formInput:focus {
   outline: none;
-  border-color: #0dff92;
-  background-color: rgba(13, 255, 146, 0.1);
-  box-shadow: 0 0 0 3px rgba(13, 255, 146, 0.2);
+  border-color: #00dbde;
+  background-color: rgba(0, 219, 222, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 219, 222, 0.2);
 }
 
 .formLabel {
@@ -86,7 +86,7 @@
   color: rgba(224, 224, 224, 0.6);
   transition: all 0.3s ease;
   pointer-events: none;
-  background-color: rgba(13, 255, 146, 0.05);
+  background-color: rgba(0, 219, 222, 0.05);
   padding: 0 0.5rem;
 }
 
@@ -95,7 +95,7 @@
   top: -0.6rem;
   left: 0.8rem;
   font-size: 0.8rem;
-  color: #0dff92;
+  color: #00dbde;
   background-color: #161b28;
 }
 
@@ -105,7 +105,7 @@
   left: 0;
   height: 2px;
   width: 0;
-  background: linear-gradient(90deg, #3b82f6, #0dff92);
+  background: linear-gradient(90deg, #3b82f6, #00dbde);
   transition: width 0.3s ease;
 }
 
@@ -128,7 +128,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: #0a0e17;
-  background: linear-gradient(135deg, #0dff92, #3b82f6);
+  background: linear-gradient(135deg, #00dbde, #3b82f6);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -140,7 +140,7 @@
 
 .submitButton:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(13, 255, 146, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 219, 222, 0.3);
 }
 
 .submitButton:active {
