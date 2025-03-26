@@ -1,7 +1,6 @@
 /* SkillsStyle.module.css */
 :root {
-  /* Base colors */
-  --primary-bg: #0a0e17;
+  --primary-bg: linear-gradient(135deg, #0a0e17 0%, #161b28 100%);
   --secondary-bg: #161b28;
   --text-primary: #e0e0e0;
   --text-secondary: rgba(224, 224, 224, 0.8);
@@ -9,20 +8,23 @@
   --card-bg: rgba(255, 255, 255, 0.05);
   --progress-bg: rgba(255, 255, 255, 0.1);
   
-  /* Gradient fallback */
-  --background-gradient: linear-gradient(135deg, #0a0e17 0%, #0a0e17 100%);
+  /* Add default dark mode colors */
+  --color-background: #0a0e17;
+  --color-text: #e0e0e0;
+  --color-border: rgba(13,255,146,0.1);
 }
+
 .skillsContainer {
+  min-height: 100vh; /* Ensures full viewport height */
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6rem 1.25rem;
-  background: var(--primary-bg) var(--background-gradient);
+  background: var(--primary-bg);
   color: var(--text-primary);
   overflow: hidden;
-  min-height: 100vh;
-  box-sizing: border-box;
+  backdrop-filter: blur(2px);
 }
 
 .matrixRain {
@@ -41,7 +43,6 @@
   animation: matrixFlow 40s linear infinite;
   pointer-events: none;
   opacity: 0.15;
-  z-index: 0;
 }
 
 @keyframes matrixFlow {
@@ -247,14 +248,17 @@
     font-size: 1.5rem;
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-bg: #f5f7fa;
-    --background-gradient: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    --primary-bg: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
     --text-primary: #2d3748;
     --text-secondary: #4a5568;
     --card-bg: rgba(0, 0, 0, 0.03);
     --progress-bg: rgba(0, 0, 0, 0.05);
+    --color-background: #f5f7fa;
+    --color-text: #2d3748;
+    --color-border: rgba(0, 0, 0, 0.1);
   }
 
   .icon {
