@@ -8,7 +8,7 @@ function Contact() {
         <p className={styles.sectionSubtitle}>Have a project in mind or want to collaborate? Let's talk!</p>
         
         <form 
-          action="https://formspree.io/f/xvgzloqv" 
+          action="https://formspree.io/f/mjkyewpw" 
           method="POST" 
           className={styles.contactForm}
         >

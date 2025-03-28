@@ -3,7 +3,7 @@ import styles from '../styles/HomeStyle.module.css';
 import twitter from '../assets/twitter-dark.svg';
 import github from '../assets/github-dark.svg';
 import linkedin from '../assets/linkedin-dark.svg';
-import CV from '../assets/resume.pdf';
+import CV from '../assets/RushikeshAware10.pdf';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('about');
@@ -16,10 +16,10 @@ function Home() {
   const techStack = [
     { name: "Java", color: "#3776AB" },
     { name: "JavaScript", color: "#3178C6" },
-    { name: "Spring Boot", color: "#68A063" },
+    { name: "Spring Core", color: "#68A063" },
     { name: "React", color: "#61DAFB" },
     { name: "GitHub", color: "#FF9900" },
-    { name: "Docker", color: "#2496ED" },
+    { name: "Spring JDBC", color: "#2496ED" },
   ];
 
   // Typewriter effect
@@ -68,7 +68,7 @@ function Home() {
           <div className={styles.greeting}>
             <span className={styles.wave}>👋</span> Hi there! I'm
           </div>
-          <h1 className={styles.name}>Sudarshan Bhosale</h1>
+          <h1 className={styles.name}>Rushikesh Aware</h1>
           <h2 className={styles.role}>
             {typedText}
             <span className={`${styles.cursor} ${showCursor ? styles.visible : ''}`}>|</span>
@@ -127,12 +127,12 @@ function Home() {
             {activeTab === 'projects' && (
               <div className={styles.projectsPreview}>
                 <div className={styles.projectCard}>
-                <h3>Job Portal System</h3>
-                <p>Apllication to track daily expenses</p>
+                <h3>Quize Application</h3>
+                <p>Apllication to conduct the exam</p>
                 </div>
                 <div className={styles.projectCard}>
-                <h3>Expense Tracker System</h3>
-                  <p>REST API which store employees information</p>
+                <h3>Movies recommend System</h3>
+                  <p>Suggest movies to user using knn algorithm</p>
                 </div>
               </div>
             )}
@@ -160,21 +160,21 @@ function Home() {
                 <span className={styles.yellow}></span>
                 <span className={styles.green}></span>
               </div>
-              <div className={styles.codeTitle}>sudarshan.js</div>
+              <div className={styles.codeTitle}>Rushikesh.js</div>
             </div>
             <pre className={styles.codeBlock}>
               <code>
 {`const developer = {\n`}
-{`  name: "Sudarshan Bhosale",\n`}
+{`  name: "Rushikesh Aware",\n`}
 {`  role: "${roles[currentRoleIndex]}",\n`}
 {`  skills: [\n`}
 {`    "JavaScript", "React", "Java",\n`}
-{`    "Spring Boot", "MySQL", "Docker"\n`}
+{`    "Spring Core", "MySQL", "Spring JDBC"\n`}
 {`  ],\n`}
 {`  contact: {\n`}
-{`    email: "bhosalesudarshan9@gmail.com",\n`}
-{`    twitter: "@darker09",\n`}
-{`    github: "Darker009"\n`}
+{`    email: "rushikeshfaware05@gmail.com",\n`}
+{`    twitter: "@rushi05",\n`}
+{`    github: "rushikeshfaware05"\n`}
 {`  }\n`}
 {`};\n\n`}
 {`function buildSomethingAwesome() {\n`}
@@ -193,11 +193,11 @@ function Home() {
           <img src={twitter} alt="Twitter" />
           <span>Twitter</span>
         </a>
-        <a href="https://github.com/Darker009" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+        <a href="https://github.com/rushikeshfaware05" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
           <img src={github} alt="GitHub" />
           <span>GitHub</span>
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
           <img src={linkedin} alt="LinkedIn" />
           <span>LinkedIn</span>
         </a>

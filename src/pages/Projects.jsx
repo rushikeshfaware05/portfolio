@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../assets/expense.jpg';
+import img1 from '../assets/java-script (1).png';
 import img2 from '../assets/jpsystem.jpg';
 import img3 from '../assets/employee.jpg';
 import styles from '../styles/ProjectStyle.module.css';
@@ -9,19 +9,19 @@ function Projects({ id }) {
     {
       id: 1,
       image: img1,
-      title: "Expense Tracker System",
-      description: "Application for tracking personal finances",
-      tags: ["React", "Spring Boot"],
-      link: "https://github.com/Darker009/Employee-Management-System",
+      title: "Quize Apllication",
+      description: "Application for Conducting the exam",
+      tags: ["React"],
+      link: "#",
       deployed: true
     },
     {
       id: 2,
       image: img2,
-      title: "Job Portal System",
-      description: "Application for applying jobs posted by employee.",
+      title: "Movie recommendation System",
+      description: "Application for reccomend movies to user using knn algorithm",
       tags: ["React", "Spring Boot"],
-      link: "https://github.com/Darker009/job-portal-backend",
+      link: "#",
       deployed: true
     },
     {
@@ -30,7 +30,7 @@ function Projects({ id }) {
       title: "Employee Management",
       description: "A comprehensive system for managing employee data",
       tags: ["React", "Spring Boot"],
-      link: "https://github.com/Darker009/ExpenseTrackerSystem",
+      link: "#",
       deployed: true
     }
     

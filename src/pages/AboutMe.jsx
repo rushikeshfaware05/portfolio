@@ -1,6 +1,6 @@
 import styles from '../styles/AboutMeStyle.module.css';
 import { useEffect, useState } from 'react';
-import profileImage from '../assets/Sudarshan.png'; // Import the image directly
+import profileImage from '../assets/rushi.jpg'; // Import the image directly
 
 export default function AboutMe() {
   const [isVisible, setIsVisible] = useState(false);

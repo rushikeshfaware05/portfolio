@@ -28,8 +28,8 @@ function Skills() {
   const [isVisible, setIsVisible] = useState(false);
   
   const frontendSkills = ["HTML", "CSS", "JavaScript", "React"];
-  const backendSkills = ["C", "Core Java", "JDBC", "Spring Core", "Spring Boot", "MySQL"];
-  const tools = ["Git", "Docker", "VS Code", "Eclipse IDE", "Spring Tool Suit 4", "Postman"];
+  const backendSkills = ["C", "Core Java", "JDBC", "Spring Core", "Spring JDBC", "MySQL"];
+  const tools = ["Git", "VS Code", "Eclipse IDE", "Spring Tool Suit 4"];
 
   useEffect(() => {
     const observer = new IntersectionObserver(

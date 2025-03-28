@@ -151,22 +151,22 @@ const handleScroll = () => {
           </div>
 
           <div className="social-links">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/rushikeshfaware05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FiGithub className="social-icon" />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FiLinkedin className="social-icon" />
             </a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <FiTwitter className="social-icon" />
             </a>
-            <a href="mailto:hello@example.com" aria-label="Email">
+            <a href="mailto:rushikeshfaware05@gmail.com" aria-label="Email">
               <FiMail className="social-icon" />
             </a>
           </div>
 
           <div className="copyright">
-            © {new Date().getFullYear()} — Maintained By <span className="tech">Darker</span> ^ <span className="tech"> Techno_-*-_ </span>
+            © {new Date().getFullYear()} — Maintained By <span className="tech">Rushikesh</span> ^ <span className="tech"> Techno_-*-_ </span>
           </div>
         </div>
       </footer>
