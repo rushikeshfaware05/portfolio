@@ -50,11 +50,11 @@ export default function AboutMe() {
               <ul>
                 <li>Spring Framework</li>
                 <li>React</li>
-                <li>MySQL / Firebase</li>
-                <li>REST API's</li>
-                <li>GitHub</li>
-                <li>Docker</li>
-                <li>Postman</li>
+                <li>MySQL </li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
               </ul>
             </div>
           </div>

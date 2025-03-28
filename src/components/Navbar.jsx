@@ -30,7 +30,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             handleNavClick('home');
           }}
         >
-          <span>D</span><span>a</span><span>r</span><span>k</span><span>e</span><span>r</span>
+          <span>R</span><span>U</span><span>S</span><span>H</span><span>I</span><span>K</span><span>E</span><span>S</span><span>H</span>
         </a>
       </div>
 
